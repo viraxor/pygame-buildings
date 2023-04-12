@@ -78,6 +78,6 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-            pygame() # raises an error and stops everything
+            running = False
             
     clock.tick(60)
