@@ -29,7 +29,7 @@ class Building(pygame.sprite.Sprite):
         pygame.draw.rect(window, self.color, (self.x1, self.y1, self.width, 600))
 
 def draw_building(x1, y1, width=150):
-    gray_shade = random.randint(0, 45)
+    gray_shade = random.randint(45, 90)
     return Building(x1, y1, width, pygame.Color((gray_shade, gray_shade, gray_shade)))
 
 while running:
